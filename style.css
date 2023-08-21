@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+body{
+    background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal;
+}
+
+.container{
+    /* background-image: url("/img/background.png"); */
+    width: 100%;
+    height: 100vh;
+
+}
+.container .item{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.container .item .col1{
+    flex-basis: 55%;
+}
+
+.container .item .col1 h3{
+    color: rgb(255, 253, 253);
+    margin: 10px 0px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.container .item .col1 h2{
+    margin: 10px 0px;
+    text-transform: capitalize;
+    color: #c0ff2c;
+    font-size: 60px;
+    font-weight: 700;
+}
+.container .item .col1 h4{
+    margin: 10px 0px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+.container .item .col1 p{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #ffff;
+
+
+}
+.container .item .col1 .icon{
+    width: 500px;
+    height: 100px;
+
+}
+.container .item .col1 .icon i{
+    color:#37f012;
+    font-size: 45px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+    transition: 0.5s ease;
+
+}
+.container .item .col1 .icon i:hover{
+    text-shadow:  0px 1px 9px #caf797;
+    
+}
+
+.container .item .col2{
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.container .item .col2 img{
+    border-radius: 0% 20% 0% 20%;
+
+}
+
+.service{
+    background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%), linear-gradient(90deg, #FFFFFF 0%, #000000 100%), #00FFFF;
+background-blend-mode: multiply, screen, normal;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.service h2{
+    color:#0f3807;
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.service .item{
+    width: 40%;
+    margin: auto;
+    background: #9b9c9b4b;
+    padding: 30px;
+    border-top: 8px solid red;
+    border-bottom: 8px solid red;
+    
+}
+.service .item .flax{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+
+}
+.service .item .flax input{
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(51, 47, 56);
+    outline: none;
+background: linear-gradient(145deg, #cacaca80, #f0f0f080);
+box-shadow:  27px 27px 58px #bebebe4f,
+             -27px -27px 58px #ffffff65;
+}
+.service .item .flax ::placeholder{
+    color: #174d12d7;
+}
+
+.service .item .addr{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(51, 47, 56);
+    border: none;
+    outline: none;
+    background: linear-gradient(145deg, #cacaca80, #f0f0f080);
+box-shadow:  27px 27px 58px #bebebe4f,
+             -27px -27px 58px #ffffff65;
+
+}
+.service .item ::placeholder{
+    color: #174d12d7;
+}
+.service .item textarea{
+    display: block;
+    width: 100%;
+    color: rgb(51, 47, 56);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    background: linear-gradient(145deg, #cacaca80, #f0f0f080);
+box-shadow:  27px 27px 58px #bebebe4f,
+             -27px -27px 58px #25252565;
+
+}
+.service button{
+    border: none;
+    padding: 10px 12px 10px 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    color: #050c04;
+    background: #c0ff2c;
+    transition: 0.5s all ease;
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin:auto ;
+    background: linear-gradient(145deg, #cacaca80, #f0f0f080);
+box-shadow:  27px 27px 58px #bebebe4f,
+             -27px -27px 58px #ffffff65;
+}
+.service button:hover{
+    box-shadow:  7px 7px 8px #303030af,
+             -7px -7px 18px #050505bb;;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.about .item{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.about .item .col1{
+    flex-basis: 55%;
+
+}
+.about .item .col1 h2{
+    color: #53f829;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-shadow: 2px 0px 9px #fff;
+    margin-bottom: 20px;
+}
+.about .item .col1 p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+.about .item .col1 h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+
+}
+.about .item .col1 h4 i{
+    font-size: 35px;
+    margin-right: 15px;
+    color: #53f829;
+    text-shadow: 2px 0px 7px #f5ff9d;
+    transition: 0.5s all ease;
+
+}
+.about .item .col1 h4 i:hover{
+    text-shadow: 2px 0px 7px #e41414;
+}
+.about .item .col2{
+    flex-basis: 43%;
+    margin-left: 90px;
+
+}
+.about .item .col2 img{
+    width: 600px;
+    object-fit: cover;
+
+}
